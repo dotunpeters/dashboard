@@ -1,0 +1,43 @@
+
+.carts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 262px;
+    height: 125px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 3px #DBC9FF;
+    border-radius: 15px;
+}
+
+.carts_icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.carts_value {
+    font-size: 25px;
+    text-align: center;
+}
+
+.carts_name {
+    text-align: center;
+}
+
+.carts_gain_name {
+    text-align: center;
+    color: #9F72FF;
+    font-size: 12px;
+}

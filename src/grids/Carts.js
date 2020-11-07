@@ -10,57 +10,57 @@ import '../style/Carts.css'
 
 class Carts extends Component {
     render() {
-        if (this.props.name === "webshop") {
+        if (this.props.name === "Webshops") {
             return (
-                <div className="cart">
+                <div className="carts">
                     <div>
-                        <p> <img className="cart_img" src={webshop} alt="Webshop" /> </p>
-                        <div>
-                            <p>{this.props.value}</p>
-                            <p>{this.props.name}</p>
-                        </div>
+                        <p className="carts_icon"> <img src={webshop} alt="Webshop" /> </p>
+                    </div>
+                    <div>
+                        <p className="carts_value">{this.props.value}</p>
+                        <p className="carts_name">{this.props.name}</p>
                     </div>
                 </div>
             )
         }
 
-        if (this.props.name === "orders") {
+        else if (this.props.name === "Orders") {
             return (
-                <div className="cart">
+                <div className="carts">
                     <div>
-                        <p> <img className="cart_img" src={orders} alt="Orders" /> </p>
-                        <div>
-                            <p>{this.props.value}</p>
-                            <p>{this.props.name}</p>
-                        </div>
+                        <p className="carts_icon"> <img src={orders} alt="Orders" /> </p>
+                    </div>
+                    <div>
+                        <p className="carts_value">{this.props.value}</p>
+                        <p className="carts_name">{this.props.name}</p>
                     </div>
                 </div>
             )
         }
 
-        if (this.props.name === "marketplaces") {
+        else if (this.props.name === "Marketplaces") {
             return (
-                <div className="cart">
+                <div className="carts">
                     <div>
-                        <p> <img className="cart_img" src={webshop} alt="Webshop" /> </p>
-                        <div>
-                            <p>{this.props.value}</p>
-                            <p>{this.props.name}</p>
-                        </div>
+                        <p className="carts_icon"> <img src={marketplaces} alt="Webshop" /> </p>
+                    </div>
+                    <div>
+                        <p className="carts_value">{this.props.value}</p>
+                        <p className="carts_name">{this.props.name}</p>
                     </div>
                 </div>
             )
         }
 
-        if (this.props.name === "products") {
+        else {
             return (
-                <div className="cart">
+                <div className="carts">
                     <div>
-                        <p> <img className="cart_img" src={webshop} alt="Webshop" /> </p>
-                        <div>
-                            <p>{this.props.value}</p>
-                            <p>{this.props.name}</p>
-                        </div>
+                        <p className="carts_icon"> <img src={products} alt="Webshop" /> </p>
+                    </div>
+                    <div>
+                        <p className="carts_value">{this.props.value}</p>
+                        <p className="carts_name">{this.props.name}</p>
                     </div>
                 </div>
             )
