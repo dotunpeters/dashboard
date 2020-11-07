@@ -1,0 +1,19 @@
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    margin: 30px;
+}
+
+.content > .content_carts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+    flex-basis: 100%;
+}

@@ -1,0 +1,88 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    flex-basis: 100%;
+
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    height: auto;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header_logo {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: center;
+}
+
+.header_search {
+    order: 2;
+    flex-grow: 5;
+    flex-shrink: 5;
+    flex-basis: auto;
+    align-self: center;
+
+    display: flex;
+    opacity: 70%;
+}
+
+.header_search > img{
+    align-self: center;
+    margin-right: 5px;
+}
+
+.header_search > input{
+    align-self: center;
+    border: 0;
+    color: grey;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+
+}
+
+.header_details {
+    order: 3;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+
+    display: flex;
+}
+
+.header_details > .notify{
+    order: 1;
+}
+
+.header_details > .profile{
+    order: 2;
+}
+
+.header_details > .name{
+    order: 3;
+    font-weight: 600;
+}
+
+.header_details > .down{
+    order: 4;
+    padding-top: 5px;
+}
+
+.each {
+    align-self: center;
+    margin: 0 3px;
+}
+
+.header_details > .down:hover{
+    cursor: pointer;
+}

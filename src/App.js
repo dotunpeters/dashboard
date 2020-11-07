@@ -1,25 +1,76 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import Orders from "./Orders"
+import Products from "./Products"
+import Marketplaces from "./Marketplaces"
+import Upload from "./Upload"
+import Connect from "./Connect"
+import Logout from "./Logout"
+import Settings from "./Settings"
+import Profile from "./Profile"
+import Dashboard from "./Dashboard"
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
+import './style/App.css';
+
+
+class App extends React.Component {
+
+  constructor(props){
+    super(props);
+
+    this.state = {
+
+    }
+
+  }
+
+  render(){
+    return (
+      <Router>
+        <div className="App">
+
+        <Switch>
+          <Route path="/orders">
+            <Orders />
+          </Route>
+          <Route path="/Products">
+            <Products />
+          </Route>
+          <Route path="/marketplaces">
+            <Marketplaces />
+          </Route>
+          <Route path="/upload">
+            <Upload />
+          </Route>
+          <Route path="/connect">
+            <Connect />
+          </Route>
+          <Route path="/logout">
+            <Logout />
+          </Route>
+          <Route path="/settings">
+            <Settings />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+
+      </div>
+    </Router>
+    );
+  }
+ 
 }
 
 export default App;
+
